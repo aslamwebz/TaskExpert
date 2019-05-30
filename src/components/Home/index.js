@@ -4,7 +4,6 @@ import Rodal from 'rodal'
 import  {TwitterPicker} from 'react-color'
 import { connect } from 'react-redux'
 import { DragDropContext } from "react-beautiful-dnd";
-import Column from '../Column/Column'
 import Swal from 'sweetalert2'
 
 import { fetchData, addArea, addTask, dragEnd,colorChange,taskChange,columnChange} from '../../actions/taskActions'
@@ -149,7 +148,7 @@ const Home = props => {
 
   return (
     <DragDropContext onDragEnd={dragEnd}>
-        <div className="row m-4 flex-row flex-sm-nowrap pt-3" id="content">
+        <div className="row m-2 flex-row flex-sm-nowrap pt-2" id="content">
         {content}
             <div className="col-sm-4 col-md-3 d-flex justify-content-center" >
             <div className="card">

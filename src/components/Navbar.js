@@ -1,7 +1,4 @@
 import React, {useState} from 'react'
-// import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
-// import { openCart } from '../actions/cartActions'
 import GithubCorner from 'react-github-corner';
 import { TwitterPicker } from 'react-color';
 import Rodal from 'rodal';

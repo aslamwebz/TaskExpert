@@ -54,8 +54,8 @@ const Home = props => {
                     </div>
 
                     <Rodal visible={visible} onClose={() => setVisible(false)}
-                    height="500"
-                    width="700">
+                    height={500}
+                    width={700}>
                         <form onSubmit={submitHandle} id="taskform">
                             <div className="form-group">
                                 <label >Title</label>
@@ -68,7 +68,7 @@ const Home = props => {
                                 <Textarea className="form-control"  
                                 onChange={(e) => setDescValue(e.target.value)}
                                 defaultValue={descValue}
-                                minRows={8}q
+                                minRows={8}
                                 cols={0}
                                 ></Textarea>
                             </div>
