@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/TaskExpert/static/css/main.44bfe4f6.chunk.css",
+    "main.js": "/TaskExpert/static/js/main.2d90a963.chunk.js",
+    "main.js.map": "/TaskExpert/static/js/main.2d90a963.chunk.js.map",
+    "runtime~main.js": "/TaskExpert/static/js/runtime~main.df08870f.js",
+    "runtime~main.js.map": "/TaskExpert/static/js/runtime~main.df08870f.js.map",
+    "static/css/2.4364cc03.chunk.css": "/TaskExpert/static/css/2.4364cc03.chunk.css",
+    "static/js/2.6b295edf.chunk.js": "/TaskExpert/static/js/2.6b295edf.chunk.js",
+    "static/js/2.6b295edf.chunk.js.map": "/TaskExpert/static/js/2.6b295edf.chunk.js.map",
+    "index.html": "/TaskExpert/index.html",
+    "precache-manifest.ab7562869e146c5effa877857c21b42f.js": "/TaskExpert/precache-manifest.ab7562869e146c5effa877857c21b42f.js",
+    "service-worker.js": "/TaskExpert/service-worker.js",
+    "static/css/2.4364cc03.chunk.css.map": "/TaskExpert/static/css/2.4364cc03.chunk.css.map",
+    "static/css/main.44bfe4f6.chunk.css.map": "/TaskExpert/static/css/main.44bfe4f6.chunk.css.map"
+  }
+}
