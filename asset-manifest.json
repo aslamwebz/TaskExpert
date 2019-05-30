@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/TaskExpert/static/css/main.95ae68ee.chunk.css",
-    "main.js": "/TaskExpert/static/js/main.2d90a963.chunk.js",
-    "main.js.map": "/TaskExpert/static/js/main.2d90a963.chunk.js.map",
+    "main.css": "/TaskExpert/static/css/main.211025dc.chunk.css",
+    "main.js": "/TaskExpert/static/js/main.b063f678.chunk.js",
+    "main.js.map": "/TaskExpert/static/js/main.b063f678.chunk.js.map",
     "runtime~main.js": "/TaskExpert/static/js/runtime~main.df08870f.js",
     "runtime~main.js.map": "/TaskExpert/static/js/runtime~main.df08870f.js.map",
     "static/css/2.4364cc03.chunk.css": "/TaskExpert/static/css/2.4364cc03.chunk.css",
-    "static/js/2.6b295edf.chunk.js": "/TaskExpert/static/js/2.6b295edf.chunk.js",
-    "static/js/2.6b295edf.chunk.js.map": "/TaskExpert/static/js/2.6b295edf.chunk.js.map",
+    "static/js/2.0bfe20c1.chunk.js": "/TaskExpert/static/js/2.0bfe20c1.chunk.js",
+    "static/js/2.0bfe20c1.chunk.js.map": "/TaskExpert/static/js/2.0bfe20c1.chunk.js.map",
     "index.html": "/TaskExpert/index.html",
-    "precache-manifest.de6426e231d0bf752b7be553af8144f6.js": "/TaskExpert/precache-manifest.de6426e231d0bf752b7be553af8144f6.js",
+    "precache-manifest.7cbae6c80101cbd9aaeabb182a2f6bc2.js": "/TaskExpert/precache-manifest.7cbae6c80101cbd9aaeabb182a2f6bc2.js",
     "service-worker.js": "/TaskExpert/service-worker.js",
     "static/css/2.4364cc03.chunk.css.map": "/TaskExpert/static/css/2.4364cc03.chunk.css.map",
-    "static/css/main.95ae68ee.chunk.css.map": "/TaskExpert/static/css/main.95ae68ee.chunk.css.map"
+    "static/css/main.211025dc.chunk.css.map": "/TaskExpert/static/css/main.211025dc.chunk.css.map"
   }
 }
