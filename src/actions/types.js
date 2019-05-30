@@ -1,0 +1,7 @@
+export const FETCH_DATA = 'FETCH_TASKS'
+export const NEW_TASK = 'NEW_TASK'
+export const NEW_COLUMN = 'NEW_COLUMN'
+export const DRAG_END = 'DRAG_END'
+export const COLOR_CHANGE = 'COLOR_CHANGE'
+export const TASK_CHANGE = 'TASK_CHANGE'
+export const COLUMN_CHANGE = 'COLUMN_CHANGE'
