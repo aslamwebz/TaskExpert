@@ -1,4 +1,4 @@
-import {FETCH_DATA,NEW_COLUMN,COLUMN_CHANGE, NEW_TASK,TASK_CHANGE, DRAG_END,COLOR_CHANGE} from '../actions/types'
+import {FETCH_DATA,NEW_COLUMN,COLUMN_CHANGE, NEW_TASK,TASK_CHANGE, DRAG_END,COLOR_CHANGE, DELETE_COLUMN, DELETE_TASK} from '../actions/types'
 
 const initialState = {
     data:{tasks :{
@@ -45,6 +45,16 @@ export default function(state = initialState, action){
                 data:action.payload
             }
         case COLUMN_CHANGE:
+            return{
+                ...state,
+                data:action.payload
+            }
+        case DELETE_COLUMN:
+            return{
+                ...state,
+                data:action.payload
+            }
+        case DELETE_TASK:
             return{
                 ...state,
                 data:action.payload

@@ -24,7 +24,8 @@ const CardManager = (props) => {
                         >
                         {props.tasks.map((task, index) => (
                             <Card key={task.id} listID={task.id} index={index} item={task}
-                             taskChange={props.taskChange} />
+                             taskChange={props.taskChange}
+                             taskDelete={props.taskDelete} />
                         ))}
                                 
 

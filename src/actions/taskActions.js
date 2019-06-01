@@ -1,4 +1,4 @@
-import {FETCH_DATA, NEW_TASK,COLUMN_CHANGE, TASK_CHANGE, NEW_COLUMN, DRAG_END, COLOR_CHANGE} from './types'
+import {FETCH_DATA, NEW_TASK,COLUMN_CHANGE, TASK_CHANGE, NEW_COLUMN, DRAG_END, COLOR_CHANGE, DELETE_COLUMN, DELETE_TASK} from './types'
 import { Data } from '../components/Data/Data'
 
 export const fetchData = () => dispatch => {
@@ -183,8 +183,6 @@ export const taskChange = (task, id, data) => dispatch => {
 }
 
 export const columnChange = (column, val, data) => dispatch => {
-
-
     let d = {
         ...data,
         columns:{
@@ -198,10 +196,48 @@ export const columnChange = (column, val, data) => dispatch => {
         }
     }
 
-    console.log(d)
+    // console.log(d)
 
     dispatch({
         type:COLUMN_CHANGE,
         payload:d
     })
 }
+
+export const deleteColumn = (id, data) => dispatch => {
+    let d =  data.columnData
+
+    d = d.filter(col => col !== id)
+
+    const datas =  {
+        ...data,
+        columnData:d
+    }
+
+    dispatch({
+        type:DELETE_COLUMN,
+        payload:datas
+    })
+}
+
+export const deleteTask = (id, column, data) => dispatch => {
+    let d =  data.columns[column]
+   
+    d = d.taskIds.filter(taskid => taskid !== id)
+
+    const datas = {
+        ...data,
+        columns:{
+            ...data.columns,
+            [column]:{
+                ...data.columns[column],
+                taskIds:d
+            }
+        }
+    }
+   
+    dispatch({
+        type:DELETE_TASK,
+        payload:datas
+    })
+   }

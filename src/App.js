@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import {Provider} from 'react-redux'
 import store from './store'
+import Testdoc from './Testdoc'
 
 
 

@@ -8,6 +8,7 @@ export const Data = {
          'task-6':{id: 'task-6', text: 'Light up the mountain',description:'column-3'},
          'task-7':{id: 'task-7', text: 'Build a pirate ship',description:'column-1'},
          'task-8':{id: 'task-8', text: 'Say no Darth Vadar',description:'column-2'},
+         'task-9':{id: 'task-9', text: 'Please enter a title',description:'column-2'},
     },
     columnData:['column-1','column-2','column-3'],
     columns:{

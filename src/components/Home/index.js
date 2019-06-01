@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { DragDropContext } from "react-beautiful-dnd";
 import Swal from 'sweetalert2'
 
-import { fetchData, addArea, addTask, dragEnd,colorChange,taskChange,columnChange} from '../../actions/taskActions'
+import { fetchData, addArea, addTask, dragEnd,colorChange,taskChange,columnChange, deleteColumn, deleteTask} from '../../actions/taskActions'
 
 
 const Home = props => {
@@ -117,8 +117,12 @@ const Home = props => {
                     <div className="" key={item} style={style.container}>
                         <div className="card">
                             <div className="card-header" style={{background:props.data.columns[item].background}} 
+                            
                           >
-                                <h4 className="m-4"  onClick={() => columnShow(column)}>{props.data.columns[item].title}</h4>
+                                <h4 className="m-4"  >{props.data.columns[item].title}
+                                <button className="float-right btn btn-outline" onClick={() => props.deleteColumn(item, props.data)}><span ><i className="far fa-trash-alt"></i></span></button>
+                                <button className="float-right btn btn-outline" onClick={() => columnShow(column)}><span><i className="far fa-edit"></i></span></button>
+                                </h4>
                                 {/* <button onClick={() => showhide()}>ChangeColor</button> */}
                                 {/* <Rodal visible={visible} onClose={() => showhide()}>
                                     <div className="d-flex justify-content-center">
@@ -131,12 +135,13 @@ const Home = props => {
                                  tasks={tasks} 
                                 colorchange={colorchange}
                                 taskChange={taskChange}
+                                taskDelete={(id) => props.deleteTask(id, item, props.data)}
                                 // showhide={showhide}
                                 // visible={visible}
                                 />
                             </div>
                             <div className="card-footer">
-                                <button onClick={() => addTask(item)} style={style.btn}> <i className="fas fa-plus"></i> &nbsp;  Add another card</button>    
+                                <button onClick={() => addTask(item)} style={style.btn}> <i className="fas fa-plus"></i> &nbsp;  Add a task</button>    
                             </div>
                         </div>
                     </div>
@@ -167,4 +172,4 @@ const mapStateToProps = state => ({
     data:state.datas.data
 })
 
-export default connect(mapStateToProps, {columnChange, fetchData, addArea, addTask, dragEnd, colorChange, taskChange})(Home)
+export default connect(mapStateToProps, {columnChange, fetchData, addArea, addTask, dragEnd, colorChange, taskChange, deleteColumn, deleteTask})(Home)

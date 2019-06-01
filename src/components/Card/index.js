@@ -54,26 +54,27 @@ const Home = props => {
                     </div>
 
                     <Rodal visible={visible} onClose={() => setVisible(false)}
-                    height={500}
-                    width={700}>
-                        <form onSubmit={submitHandle} id="taskform">
-                            <div className="form-group">
-                                <label >Title</label>
-                                <input type="text" className="form-control"  onChange={(e) => setTextValue(e.target.value)}
-                                value={textValue}
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label >Description</label>
-                                <Textarea className="form-control"  
-                                onChange={(e) => setDescValue(e.target.value)}
-                                defaultValue={descValue}
-                                minRows={8}
-                                cols={0}
-                                ></Textarea>
-                            </div>
-                            <button className="btn btn-info" type="submit">Save</button>
-                        </form>
+                        height={500}
+                        width={700}>
+                            <form onSubmit={submitHandle} id="taskform">
+                                <div className="form-group">
+                                    <label >Title</label>
+                                    <input type="text" className="form-control"  onChange={(e) => setTextValue(e.target.value)}
+                                    value={textValue}
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label >Description</label>
+                                    <Textarea className="form-control"  
+                                    onChange={(e) => setDescValue(e.target.value)}
+                                    defaultValue={descValue}
+                                    minRows={8}
+                                    cols={0}
+                                    ></Textarea>
+                                </div>
+                                <button className="btn btn-danger float-right" type="button" onClick={() => props.taskDelete(props.item.id)}><span><i className="far fa-trash-alt"></i></span>&nbsp; Delete</button>
+                                <button className="btn btn-info" type="submit"><span ><i className="fas fa-save"></i></span>&nbsp; Save</button>
+                            </form>
                      </Rodal>
                     
                  {provided.placeholder}
