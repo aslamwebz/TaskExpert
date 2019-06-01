@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a15413549b2aa76107fd89579954cd00",
+    "revision": "2c0566f5d6039264c278a88161fec834",
     "url": "/TaskExpert/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TaskExpert/static/css/2.4364cc03.chunk.css"
   },
   {
-    "revision": "7bad56344b9416b700c6",
+    "revision": "79c2a5f42773b2062dbf",
     "url": "/TaskExpert/static/css/main.211025dc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TaskExpert/static/js/2.0bfe20c1.chunk.js"
   },
   {
-    "revision": "7bad56344b9416b700c6",
-    "url": "/TaskExpert/static/js/main.b063f678.chunk.js"
+    "revision": "79c2a5f42773b2062dbf",
+    "url": "/TaskExpert/static/js/main.0cbf4c6f.chunk.js"
   },
   {
     "revision": "827d2059c1cfee4045dc",
